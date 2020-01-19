@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ACCH Programação</title>
+    <link rel="styleSheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="nav_tabs">
+      <ul>
+        <li>
+          <input type="radio" id="tab1" class="rd_tab" name="tabs" checked />
+          <label for="tab1" class="tab_label">Questionário</label>
+
+          <div class="tab-content">
+            <form id="info">
+              <h2 id="ident">ID: # 0000</h2>
+              <hr />
+
+              <p>
+                <label for="idade">Idade</label>
+                <input
+                  type="number"
+                  name="#"
+                  id="idade"
+                  placeholder="Digite sua idade"
+                /><br />
+              </p>
+
+              <!--edicao do sexo-->
+              <p>
+                Sexo
+                <input
+                  type="radio"
+                  id="Feminino"
+                  name="sexo"
+                  value="fem"
+                  checked
+                />
+                <label for="Feminino">Feminino</label>
+
+                <input type="radio" id="Masculino" name="sexo" value="masc" />
+                <label for="Masculino">Masculino</label>
+              </p>
+
+              <!--edicao cores olhos e cabelos-->
+              <p>
+                <label for="corOlhos">Cor dos Olhos:</label>
+                <select id="corOlhos">
+                  <option value="Azul">Azul</option>
+                  <option value="Preto">Preto</option>
+                  <option value="Castanho">Castanho</option>
+                  <option value="Verde">Verde</option>
+                </select>
+              </p>
+
+              <p>
+                <label for="corCabelos">Cor dos Cabelos:</label>
+                <select id="corCabelos">
+                  <option value="Preto">Preto</option>
+                  <option value="Loiro">Loiro</option>
+                  <option value="Ruivo">Ruivo</option>
+                  <option value="Castanho">Castanho</option>
+                </select>
+              </p>
+
+              <button id="btn_save">Salvar</button>
+
+              <button id="btn_cancel">Cancelar</button>
+            </form>
+          </div>
+        </li>
+
+        <li>
+          <input type="radio" id="tab2" class="rd_tab" name="tabs" />
+          <label for="tab2" class="tab_label" id="table-listagem"
+            >Listagem</label
+          >
+          <div class="tab-content">
+            <h1>Listagem Geral</h1>
+            <hr />
+            <div class="dadosUser">
+              <div id="table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Idade</th>
+                      <th>Sexo</th>
+                      <th>Olhos</th>
+                      <th>Cabelos</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <input type="radio" id="tab3" class="rd_tab" name="tabs" />
+          <label for="tab3" class="tab_label">Sobre</label>
+          <div class="tab-content">
+            <h2 id="sobre">RA: #1910167</h2>
+            <hr />
+            <table>
+              <thead>
+                <tr>
+                  <th>Ismael Assis Pacheco</th>
+                  <th>
+                    <a href="ismael.apacheco@hotmail.com"
+                      >ismaelpacheco@alunos.utfpr.edu.br</a
+                    >
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <script src="app.js"></script>
+  </body>
+</html>
